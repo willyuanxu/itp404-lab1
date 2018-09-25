@@ -1,0 +1,11 @@
+{{#each model.data.children as |child|}}
+	<br>
+	<div class="child">
+		<a href="{{child.data.url}}">{{child.data.title}}</a>
+		<p>Number of comments: {{child.data.num_comments}}</p>
+		<p>Ups: {{child.data.ups}}  Downs: {{child.data.downs}}</p>
+		
+	</div>
+	
+		<a href={{child.url}}>{{child.title}}</a>
+{{/each}}
